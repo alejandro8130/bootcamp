@@ -1,0 +1,16 @@
+.contenido {
+  background: lightblue;
+  color: blue;
+  border-radius: 5px;
+}
+.atencion {
+  padding: 10px;
+}
+.contenido2 {
+  background: #F5A9BC;
+  color: red;
+  border-radius: 5px;
+}
+.consola{
+  font: bold 80% monospace;
+}

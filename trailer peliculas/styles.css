@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: helvetica;
+	color: #333;
+	font-size: 16px;
+	white-space: 1.6px;
+}
+header{
+	background-color: whitesmoke;
+	border-style: solid;
+	border-top: 1px;
+	border-color: #ddd;
+	width: 100%;
+}
+div{
+	background-color: whitesmoke;
+	width: 200px;
+	height: 300px;
+	text-align: center;
+	display: inline-block;
+	margin: 20px 20px 0px 20px;
+	border-style: solid;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-color: #ddd;
+	border-radius: 8px 8px 8px 8px;
+}
+img{
+	width: 100px;
+	padding-top: 20px;
+	align-content: center;
+}
+.fecha{
+	color: grey;
+}
+a{
+	text-decoration: none;
+}

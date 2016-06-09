@@ -1,0 +1,42 @@
+body{
+	background-color: #edeff0;
+	font-family: helvetica;
+	font-size: 16px;
+	white-space: 1.6px;
+}
+p{
+	color: #b2bac2;
+}
+.contenido{
+	width: 700px;
+  background-color: white;
+  padding: 20px;
+}
+.titulo{
+	font-size: 28px;
+	color: #384047;
+}
+.titulo2{
+  font-size: 16px;
+  color: #384047; 
+}
+div.contenido2{
+  display: inline-block;
+  width: 320px;
+  padding: 10px;
+}
+input{
+  padding: 10px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  color: white;  
+}
+input.verde{
+  background-color:  #5fcf80;
+  border-color:  #3ac162;  
+}
+input.azul{
+  background-color: #3f8abf;
+  border-color: #326e99;
+}
