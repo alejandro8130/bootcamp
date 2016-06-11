@@ -1,0 +1,20 @@
+.contenido{
+  padding-right: 60px;
+  padding-left: 30px;
+}
+.parrafo{
+  font-size: 12px;
+  color: grey;
+  font-weight: bold;
+}
+.fecha{
+  font-size: 22px;
+}
+a{
+  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+}
+.derecha{
+  text-align: right;
+}

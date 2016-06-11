@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+}
+.nav {
+  background: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  color: #1F1F1F;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.bandera {
+  width: 35px;
+  height: 25px;
+}
+a {
+  color: #1F1F1F;
+  font-family: sans-serif;
+}
+.borde {
+  border-right: 1px solid;
+}
+.banner {
+  height: 30em;
+  width: 100%;
+  margin-top: 7.5em;  
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("img/1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 7%;
+  position: absolute;
+}
+.titulo {
+  text-transform: uppercase;
+  font-size: 4.5em;
+  font-weight: 700;
+  line-height: 1em;
+  color: white;
+}
+.subtitulo {
+  font-size: 1.4em;
+  font-weight: 300px;
+}
+button {
+  padding: 19px;
+  margin: 19px;
+  position: relative;
+  top: 470px;
+}
+.aplica {
+  
+}
+
