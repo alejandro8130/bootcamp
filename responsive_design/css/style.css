@@ -11,8 +11,16 @@ body {
 }
 
 .home-wrapper {
-  background: url('../images/bg_2.jpg');
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/bg_2.jpg') no-repeat, center, top;
   color: white;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(48, 48, 48, 0.5);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
 }
 
 header nav {
@@ -34,6 +42,8 @@ header nav a.active {
 
 header .logo {
   font-size: 22px;
+  font-weight: normal;
+  margin: 10px;
 }
 
 #home {
@@ -45,6 +55,7 @@ header .logo {
   font-size: 68px;
   font-weight: normal;
   margin-bottom: 40px;
+  line-height: 1.2;
 }
 
 #home p {
@@ -67,12 +78,19 @@ header .logo {
   height: 50px;
   line-height: 50px;
   width: 50px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+#home .social a:hover {
+  background: #fed136;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 992px;
+  width: 80%;
 }
 
 #servicios h2 {
@@ -88,6 +106,12 @@ header .logo {
   width: 33%;
 }
 
+#video {
+  background: black;
+  text-align: center;
+  padding: 30px 0;
+}
+
 #portafolio h2 {
   font-size: 32px;
   margin-bottom: 80px;
@@ -100,6 +124,134 @@ header .logo {
   text-align: center;
   width: 31%;
   margin: 1%;
+}
+
+#portafolio .box img {
+  width: 100%;
+}
+
+#contacto {
+  background: #303030;
+  background-image: url('../images/map-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#contacto h2 {
+  color: white;
+  font-size: 32px;
+}
+
+#contacto input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 20px;
+  width: 400px;
+}
+
+#contacto textarea {
+  margin: 20px 0;
+  padding: 20px;
+  width: 400px;
+}
+
+#contacto button {
+  background: #fed136;
+  padding: 20px 40px;
+  border-color: #fed136;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+section {
+  padding: 80px 0;
+}
+
+footer {
+  font-size: 18px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
 
 }
 
+@media only screen and (max-width: 992px) {
+  
+  .home-wrapper {
+    width: 100%;
+  }
+
+  #home h1 {
+    font-size: 20px;
+  }
+
+  #home p {
+    font-size: 18px;
+  }
+
+  #contacto {
+    width: 100%;
+  }
+
+  #servicios .box {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  }
+
+  #portafolio .box {
+  background-color: white;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  width: 45%;
+  margin: 1%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  header {
+    text-align: center;
+  }
+
+  header nav {
+    float: none;
+    margin: 10px;
+  }
+
+  header nav a {
+    margin: 5px;
+    padding: 5px 10px;
+  }
+
+  header .logo {
+    font-size: 16px;
+  }
+
+  #servicios .box {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  }
+
+ #portafolio .box {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  margin: 1%;
+  }
+
+  footer {
+  font-size: 16px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+}
