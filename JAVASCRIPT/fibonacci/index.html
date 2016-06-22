@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci</title>
+</head>
+<body>
+  <p id="resul"></p>
+
+  <script type="text/javascript">
+
+    function fibonacci(a) {
+
+      var fib = [0,1];
+      for(i = 2; i <= a+2; i++) {
+        fib[i] = fib[i-1] + fib[i-2];      
+      }
+      return fib[a];
+
+    }
+    document.getElementById("resul").innerHTML = fibonacci(14);
+
+  </script>
+
+</body>
+</html>
