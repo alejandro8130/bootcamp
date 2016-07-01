@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Lista de Tareas</h1>
+
+    <input type="text" id="input" placeholder="Cual es tu tarea?">
+    <ul class="todo-list">
+    </ul>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#input').on('keypress', function(e) {
+        if (e.which == 13) {
+          $('.todo-list').append('<li></li>');
+          $('li').text($(this).val());
+          $('.input').submit();
+        };
+      });
+    });
+  };
+
+$('#someTextBox').keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){
+        alert('You pressed a "enter" key in textbox');  
+    }
+});
+
+  </script>
+
+</body>
+</html>
