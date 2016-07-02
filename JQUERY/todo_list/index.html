@@ -17,23 +17,13 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('#input').on('keypress', function(e) {
-        if (e.which == 13) {
-          $('.todo-list').append('<li></li>');
-          $('li').text($(this).val());
-          $('.input').submit();
-        };
-      });
-    });
-  };
 
-$('#someTextBox').keypress(function(event){
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if(keycode == '13'){
-        alert('You pressed a "enter" key in textbox');  
-    }
-});
+    $(document).on('keypress',function(e) {
+      if(e.which == 13) {
+        var val = $('#input').val();
+        $('.todo-list').append('<li><input type="checkbox">'+val+'<strong class="right">x</strong></li>');   
+      };
+    });
 
   </script>
 

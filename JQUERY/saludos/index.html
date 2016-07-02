@@ -27,8 +27,13 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      $('#name').on('keyup',function() {
-        $('h1').text('Hola '+($(this).val())+' !');
+      $('#name').on('keyup',function() {    
+        var val = $(this).val();
+          $('h1').text('Hola '+val+' !');
+          var lon = val.length;
+          if (0 == lon) {
+            $('h1').text('¿Cómo te llamas?');
+          };
       });
     });
 

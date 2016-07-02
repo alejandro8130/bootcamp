@@ -32,3 +32,9 @@ li {
   padding: 15px 15px 15px 10px;
   border-radius: 5px;
 }
+
+.right {
+  display: inline-block;
+  font-size: 20px;
+  text-align: right;
+}
