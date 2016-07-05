@@ -34,7 +34,14 @@ li {
 }
 
 .right {
-  display: inline-block;
+  color: grey;
+  cursor: pointer;
+  float: right;
   font-size: 20px;
-  text-align: right;
+  text-decoration: none;
+}
+
+.checkbox {
+  color: grey;
+  text-decoration: line-through;
 }

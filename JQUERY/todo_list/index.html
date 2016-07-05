@@ -8,22 +8,64 @@
 <body>
   <div class="wrapper">
     <h1>Lista de Tareas</h1>
+    
 
     <input type="text" id="input" placeholder="Cual es tu tarea?">
     <ul class="todo-list">
     </ul>
   </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
 
   <script type="text/javascript">
 
-    $(document).on('keypress',function(e) {
-      if(e.which == 13) {
-        var val = $('#input').val();
-        $('.todo-list').append('<li><input type="checkbox">'+val+'<strong class="right">x</strong></li>');   
+    $(document).ready(function(){
+
+      enter();  
+
+      function enter() {
+        $('#input').on('keypress', function(e) {
+          if(e.which == 13) {
+            var val = $('#input').val();
+            $('.todo-list').append('<li><span><input type="checkbox" id="checkbox">'+val
+              +'</span><a href="#" class="right">X</a></li>');  
+            $('#input').val('');   
+          }; 
+        checkbox();
+        hover();
+        });
+      }; 
+
+      function checkbox() {
+        $('input').on( 'click', function() {
+          if( $(this).is(':checked') ){
+            $(this).closest('span').addClass('checkbox');              
+          }else {
+            $(this).closest('span').removeClass('checkbox');
+          }
+        });
       };
+
+        function hover() {
+        $('li').on('mouseenter', function(){
+          $(this).css('background','#DCDCDC');
+          remover();  
+        });
+        $('li').on('mouseleave', function(){
+          $(this).css('background','white');
+        });
+      };
+
+      function remover() {
+        $('a').on('click', function() {
+          $(this).closest('li').remove();
+        }); 
+      };    
+      
     });
+
+    
 
   </script>
 
