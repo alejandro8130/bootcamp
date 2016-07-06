@@ -28,7 +28,7 @@
         $('#input').on('keypress', function(e) {
           if(e.which == 13) {
             var val = $('#input').val();
-            $('.todo-list').append('<li><span><input type="checkbox" id="checkbox">'+val
+            $('.todo-list').append('<li><span><input type="checkbox">'+val
               +'</span><a href="#" class="right">X</a></li>');  
             $('#input').val('');   
           }; 
